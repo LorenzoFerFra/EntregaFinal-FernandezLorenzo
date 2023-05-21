@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin-top: 0;
+    background-color: rgb(77, 77, 77)    
+}
+
+h1,h2,h3{font-family: 'Rubik Pixels', cursive;}
+p{font-family: 'Roboto', sans-serif;}
+
+.cabecera{
+    width: 100%;
+    padding: 50px;
+    border: 1px solid black;
+    }  
+.cabecera ul{
+     list-style: none;
+}
+.cabecera ul li{
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid black;
+    }
+.navegacion{
+    position: relative;
+    left: 700px;
+}
