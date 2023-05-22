@@ -27,3 +27,10 @@ p{font-family: 'Roboto', sans-serif;}
 .smash-logo{
     width: 100px;
 }
+.navbar a{
+    color: aqua;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: blue;
+}
+
