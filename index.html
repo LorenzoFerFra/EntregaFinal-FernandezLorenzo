@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecera">
+    <main>
+        <div class="header__bg">
         <h1>Datos Smash</h1>
         <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid">
@@ -37,7 +38,7 @@
                     <a class="nav-link" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Personajes</a>
+                    <a class="nav-link" href="personajes.html">Personajes</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled">Jugadores(wip)</a>
@@ -52,13 +53,18 @@
               </div>
             </div>
           </nav>
-    </header>
-    <main>
-        <section class="introduccion">
-            <img src="assets/img/portada.jpg" alt="portada">
-            <h2>Que es dato smash?</h2>
+          <div class= "header__content container-fluid d-flex">
+            <!--Titulo y Texto introductorio al sitio-->
+            <div class="col-7 d-flex flex-column">
+                <h2>Que es dato smash?</h2>
             <p>Se trata de una pagina web con infromacion de los personajes de la saga de juegos smash bros de nintendo. Incluyendo tambien datos relacionados a estos y a los juegos de los que se originan</p>
-        </section>
+            </div>
+            <!--Imagen de portada-->
+             <div class="col-5">
+                <img src="assets/img/SmashUltimateBox.jpg" alt="portada smash ultimate">
+            </div>
+            </div>
+        </div>
     </main>
     <footer>
         @Copyright nintendo smash ultimate 2018
