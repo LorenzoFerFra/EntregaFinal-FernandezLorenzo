@@ -7,7 +7,7 @@
 h1,h2,h3{font-family: 'Rubik Pixels', cursive;}
 p{font-family: 'Roboto', sans-serif;}
 .header__bg{
-    background-color: rgb(rgb(45, 26, 250), green, blue) 
+    background-color: rgb(rgb(45, 26, 250)) 
 }
 .smash-logo{
     width: 100px;
@@ -18,3 +18,16 @@ p{font-family: 'Roboto', sans-serif;}
 .navbar-brand:focus, .navbar-brand:hover {
     color: blue;
 }
+.header__content{
+    height: calc(100vh -100px);
+}
+.portada__img{
+    width: 420px;
+}
+@media (min-width: 576px) { 
+    .portada__img{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+} 
