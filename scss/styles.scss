@@ -5,12 +5,33 @@
     background-color: rgb(77, 77, 77)    
 }
 
-h1,h2,h3{font-family: 'Rubik Pixels', cursive;}
-p{font-family: 'Roboto', sans-serif;}
+h1,h2,h3{font-family: 'Rubik Pixels', cursive;
+color: silver;
+}
+p{font-family: 'Roboto', sans-serif;
+color: silver;}
 
-
-.logo{
+.logo{ 
     width: 35px;
 }
+.navbar .navbar-expand-lg{
+    padding: 0;
+}
+.navbar a{
+    color: aqua;
+}
+.navbar-nav .nav-link.active{
+    color: lightblue
+}
+.nav-link:hover{
+    color: blue;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+@mixin main__img{
+    
+}
+
 
 

@@ -17,15 +17,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img class="logo"  src="assets/img/favicon.png" alt="Smashball logo">
+          <img class="logo" src="assets/img/favicon.png" alt="Smashball logo">
           DatoSmash</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="aqua" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -48,19 +51,34 @@
         </div>
       </div>
     </nav>
-
   </header>
   <main>
     <div class="main__content container-fluid d-flex pt-5 d-flex align-items-center justify-content-center">
       <div class="row">
         <!--Titulo y Texto introductorio al sitio-->
-        <div class="col-12 col-sm-7 d-flex flex-column justify-content-center">
-          <h1>Que es dato smash?</h1> 
-          <p>Super Smash Bros. (大乱闘スマッシュブラザーズ Dairantou Sumasshu Burazāzu?, Gran Estruendo de Hermanos) es una serie de videojuegos de lucha distribuido por Nintendo, el cual presenta personajes invitados de franquicias establecidas en Nintendo y otras compañías de videojuegos y ha vendido en total más de 71 millones de unidades. La saga tuvo un exitoso comienzo en 1999 con Super Smash Bros. para la Nintendo 64. Llegó a lograr incluso un mayor éxito con Super Smash Bros. Melee, lanzado en 2001 para la Nintendo GameCube, logrando ser el juego más vendido de ese sistema. El tercer juego, Super Smash Bros. Brawl para la Wii fue lanzado el 31 de enero de 2008 en Japón y el 9 de marzo del mismo año en América. En la E3 2008 fue anunciado durante la conferencia. La cuarta entrega, Super Smash Bros. para Nintendo 3DS y Wii U, fueron lanzados el 13 de septiembre y 6 de diciembre de 2014 en Japón y el 3 de octubre y el 21 de noviembre del mismo año en América, respectivamente, y la quinta entrega, Super Smash Bros. Ultimate para Nintendo Switch fue lanzado a nivel mundial el 7 de diciembre de 2018. La saga presenta personajes de las franquicias más populares de Nintendo, como Mario (Super Mario), Fox (Star Fox), Link (The Legend of Zelda), Kirby (Kirby), Samus Aran (Metroid) o Pikachu (Pokémon). El juego original para Nintendo 64, Super Smash Bros., tenía 12 personajes; el número aumentó a 26 en Melee, a 35 en Brawl, a 58 en 3DS y Wii U, y a 89 en Ultimate. Algunos personajes son capaces de transformarse en diferentes formas que tienen diferentes estilos de juego y juegos de movimientos cada una. La saga también presenta personajes no jugables de juegos de Nintendo, como Ridley (Metroid).</p>
+        <div class="main__text col-12 col-sm-7 d-flex flex-column justify-content-center">
+          <h1>Que es dato smash?</h1>
+          <p>Super Smash Bros. (大乱闘スマッシュブラザーズ Dairantou Sumasshu Burazāzu?, Gran Estruendo de Hermanos) es una serie de
+            videojuegos de lucha distribuido por Nintendo, el cual presenta personajes invitados de franquicias
+            establecidas en Nintendo y otras compañías de videojuegos y ha vendido en total más de 71 millones de
+            unidades. La saga tuvo un exitoso comienzo en 1999 con Super Smash Bros. para la Nintendo 64. Llegó a lograr
+            incluso un mayor éxito con Super Smash Bros. Melee, lanzado en 2001 para la Nintendo GameCube, logrando ser
+            el juego más vendido de ese sistema. El tercer juego, Super Smash Bros. Brawl para la Wii fue lanzado el 31
+            de enero de 2008 en Japón y el 9 de marzo del mismo año en América. En la E3 2008 fue anunciado durante la
+            conferencia. La cuarta entrega, Super Smash Bros. para Nintendo 3DS y Wii U, fueron lanzados el 13 de
+            septiembre y 6 de diciembre de 2014 en Japón y el 3 de octubre y el 21 de noviembre del mismo año en
+            América, respectivamente, y la quinta entrega, Super Smash Bros. Ultimate para Nintendo Switch fue lanzado a
+            nivel mundial el 7 de diciembre de 2018. La saga presenta personajes de las franquicias más populares de
+            Nintendo, como Mario (Super Mario), Fox (Star Fox), Link (The Legend of Zelda), Kirby (Kirby), Samus Aran
+            (Metroid) o Pikachu (Pokémon). El juego original para Nintendo 64, Super Smash Bros., tenía 12 personajes;
+            el número aumentó a 26 en Melee, a 35 en Brawl, a 58 en 3DS y Wii U, y a 89 en Ultimate. Algunos personajes
+            son capaces de transformarse en diferentes formas que tienen diferentes estilos de juego y juegos de
+            movimientos cada una. La saga también presenta personajes no jugables de juegos de Nintendo, como Ridley
+            (Metroid).</p>
         </div>
         <!--Imagen de portada-->
         <div class="col-12 col-sm-5 justify-content-center">
-          <img class="img-fluid portada__img" src="assets/img/SmashUltimateBox.jpg" alt="portada smash ultimate">
+          <img class="img-fluid main__img" src="assets/img/SmashUltimateBox.jpg" alt="portada smash ultimate">
         </div>
       </div>
     </div>
