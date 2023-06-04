@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: rgb(77, 77, 77);
+}
+
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  color: silver;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: silver;
+}
+
+.logo {
+  width: 35px;
+}
+
+.navbar .navbar-expand-lg {
+  padding: 0;
+}
+
+.navbar a {
+  color: aqua;
+}
+
+.navbar-nav .nav-link.active {
+  color: lightblue;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.main__content {
+  height: 100vh;
+}
+
+.main__img {
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .main__img {
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=main.css.map */

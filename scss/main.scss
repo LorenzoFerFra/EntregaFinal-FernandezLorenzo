@@ -1,11 +1,12 @@
-
+@import "./layout/navbar";
 * {
     padding: 0;
-    margin-top: 0;
+    margin: 0;
+    position: relative;
     background-color: rgb(77, 77, 77)    
 }
 
-h1,h2,h3{font-family: 'Rubik Pixels', cursive;
+h1,h2,h3{font-family: 'Oswald', sans-serif;
 color: silver;
 }
 p{font-family: 'Roboto', sans-serif;
@@ -29,9 +30,19 @@ color: silver;}
 .navbar-toggler:focus {
     box-shadow: none;
 }
-@mixin main__img{
-    
+
+.main__content{
+    height: 100vh
+}
+.main__img{
+    width: 200px;
 }
 
-
+@media (min-width:768px){
+    .main__img{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+}
 
