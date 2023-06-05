@@ -1,5 +1,6 @@
-@import "./utilities/variables";
+@import "./abstracts/variables";
 @import "./layout/navbar";
+
 * {
     padding: 0;
     margin: 0;
@@ -11,30 +12,7 @@ color: silver;
 }
 p{font-family: 'Roboto', sans-serif;
 color: silver;}
-.navbar-expand-md{
-    background-color: $colorBg !important;
-}
-.logo{ 
-    width: 35px;
-}
-.navbar .navbar-expand-md{
-    padding: 0;
-}
-.navbar a{
-    color: $colorSecondary;
-}
-.navbar-nav .nav-link.active{
-    color: lightblue
-}
-.nav-link:hover{
-    color: $colorNavfocus;
-}
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-.navbar-brand:focus, .navbar-brand:hover{
-    color: $colorSecondary;
-}
+
 
 .main__bg{
     background: none;
@@ -56,7 +34,7 @@ color: silver;}
 }
 
 .main__content{
-    height: 100vh
+    height: calc(100vh - 61.5px);
 }
 .main__img{
     width: 200px;
@@ -72,19 +50,17 @@ color: silver;}
   .video-container {
     flex: 1;
     background-color: transparent;
-  }
-  
-  .video-container div {
-    position: relative;
-    padding-bottom: 50%;
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    padding: 5%;
-    display: block;
-    width: 100%;
-    height: 100%;
+    .video {
+        position: relative;
+        padding-bottom: 50%;
+      }
+      iframe {
+        position: absolute;
+        padding: 5%;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
   }
 
 

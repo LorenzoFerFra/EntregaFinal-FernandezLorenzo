@@ -1,0 +1,24 @@
+.navbar-expand-md{
+    background-color: $colorBg !important;
+}
+.logo{ 
+    width: 35px;
+}
+.navbar .navbar-expand-md{
+    padding: 0;
+}
+.navbar a{
+    color: $colorSecondary;
+}
+.navbar-nav .nav-link.active{
+    color: lightblue
+}
+.nav-link:hover{
+    color: $colorNavfocus;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-brand:focus, .navbar-brand:hover{
+    color: $colorSecondary;
+}
