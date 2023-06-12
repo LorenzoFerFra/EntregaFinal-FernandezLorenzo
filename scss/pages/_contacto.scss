@@ -1,0 +1,43 @@
+.contacto__bg {
+  display: flex;
+  justify-content: center;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  height: $viewHeight;
+  flex-direction: column;
+  
+  form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: $colorBg;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: $colorPrimary;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    background-color: $colorSecondary;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: $colorNavfocus;
+  }
+}

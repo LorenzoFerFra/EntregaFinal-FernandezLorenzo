@@ -1,0 +1,19 @@
+.char__bg{
+    display: grid;
+    background-color: $colorBg;
+    border: 5px;
+    border-color: black;
+    align-items: center;
+    justify-content: center;
+    height: $viewHeight;
+    overflow: hidden;
+}
+
+#slide-1{
+    display: grid;
+    background-color: blue;
+    
+}
+.mario__content{
+    background-color:  orange;
+}
