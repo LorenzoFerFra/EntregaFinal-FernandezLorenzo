@@ -1,0 +1,35 @@
+.jugadores__bg{
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+.mkleo__container{
+    background-color: gray;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 1rem;
+    height: $viewHeight;
+    grid-template-areas:
+    "content1 content2 content2"
+    "content3 content4 content5";
+  
+  }
+  //hacer con funcion o mixin
+  #content1{
+    @include img__content(content1);
+  }
+  #content2{
+    background-color: blue;
+    grid-area: content2;
+  }
+  #content3{
+   @include img__content(content3);
+  }
+  #content4{
+    @include img__content(content4);
+  }
+  #content5{
+    @include img__content(content5);
+  }
+  

@@ -1,0 +1,18 @@
+@mixin img__content ($area){
+    background-color: transparent;
+    grid-area: $area;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+     width: 150px;
+    }
+    @media (min-width:576px){
+      img{
+          height: auto;
+          width: auto;
+          object-fit: cover;
+      }
+  }
+}
