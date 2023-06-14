@@ -5,18 +5,20 @@
   margin: 0 auto;
   height: $viewHeight;
   flex-direction: column;
-  
+  h1 {
+    color: map-get($color, secondary);
+  }
   form {
     width: 400px;
     margin: 0 auto;
-    background-color: $colorBg;
+    background-color: map-get($color, bg);
     padding: 20px;
     border-radius: 5px;
   }
   label {
     display: block;
     margin-bottom: 10px;
-    color: $colorPrimary;
+    color: map-get($color, secondary);
   }
 
   input[type="text"],
@@ -29,7 +31,7 @@
   }
 
   input[type="submit"] {
-    background-color: $colorSecondary;
+    background-color: map-get($color, secondary);
     color: black;
     padding: 10px 20px;
     border: none;
@@ -38,6 +40,6 @@
   }
 
   input[type="submit"]:hover {
-    background-color: $colorNavfocus;
+    background-color: map-get($color, focus);
   }
 }

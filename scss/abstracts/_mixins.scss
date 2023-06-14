@@ -1,18 +1,38 @@
-@mixin img__content ($area){
-    background-color: transparent;
-    grid-area: $area;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    img{
-     width: 150px;
-    }
-    @media (min-width:576px){
-      img{
-          height: auto;
-          width: auto;
-          object-fit: cover;
-      }
+@mixin img__content($area) {
+  background-color: transparent;
+  grid-area: $area;
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    width: 150px;
   }
+  @media (min-width: 576px) {
+    img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+}
+@mixin content__bg($none) {
+  background: $none;
+  background-image: repeating-linear-gradient(
+      45deg,
+      hsla(312, 0%, 63%, 0.05) 0px,
+      hsla(312, 0%, 63%, 0.05) 10px,
+      transparent 10px,
+      transparent 100px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(312, 0%, 63%, 0.05) 0px,
+      hsla(312, 0%, 63%, 0.05) 50px,
+      transparent 50px,
+      transparent 100px
+    ),
+    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
 }

@@ -1,19 +1,51 @@
-.char__bg{
-    display: grid;
-    background-color: $colorBg;
-    border: 5px;
-    border-color: black;
-    align-items: center;
-    justify-content: center;
-    height: $viewHeight;
-    overflow: hidden;
-}
+.char__bg {
+  border: 5px;
+  border-color: black;
+  align-items: center;
+  justify-content: center;
+  height: $viewHeight;
+  overflow: hidden;
 
-#slide-1{
+  #slide-1 {
+    font-size: 1em;
     display: grid;
-    background-color: blue;
-    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "content1"
+      "content2"
+      "content3";
+    .char__img {
+      grid-area: content1;
+      width: 300px;
+      display: flex;
+    }
+    .char__content {
+      grid-area: content2;
+    }
+    .char__pros {
+      grid-area: content3;
+      display: flex;
+      justify-content: center;
+      div {
+        padding: 10px;
+      }
+    }
+  }
 }
-.mario__content{
-    background-color:  orange;
+@media (min-width: 768px) {
+  .char__bg {
+    #slide-1 {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "content1 content2"
+        "content3 content2";
+      .char__img {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
 }

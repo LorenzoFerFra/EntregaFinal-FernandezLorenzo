@@ -5,7 +5,14 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+body {
+  background: none;
+  background-image: repeating-linear-gradient(45deg, hsla(312, 0%, 63%, 0.05) 0px, hsla(312, 0%, 63%, 0.05) 10px, transparent 10px, transparent 100px), repeating-linear-gradient(90deg, hsla(312, 0%, 63%, 0.05) 0px, hsla(312, 0%, 63%, 0.05) 50px, transparent 50px, transparent 100px), linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
+}
+
+h1,
+h2,
+h3 {
   font-family: "Oswald", sans-serif;
   color: silver;
 }
@@ -43,7 +50,8 @@ p {
   box-shadow: none;
 }
 
-.navbar-brand:focus, .navbar-brand:hover {
+.navbar-brand:focus,
+.navbar-brand:hover {
   color: aqua;
 }
 
@@ -146,11 +154,6 @@ p {
     display: none;
   }
 }
-body {
-  background: none;
-  background-image: repeating-linear-gradient(45deg, hsla(312, 0%, 63%, 0.05) 0px, hsla(312, 0%, 63%, 0.05) 10px, transparent 10px, transparent 100px), repeating-linear-gradient(90deg, hsla(312, 0%, 63%, 0.05) 0px, hsla(312, 0%, 63%, 0.05) 50px, transparent 50px, transparent 100px), linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
-}
-
 .main__content {
   height: calc(100vh - 61.5px);
 }
@@ -193,8 +196,6 @@ body {
   }
 }
 .char__bg {
-  display: grid;
-  background-color: rgb(77, 77, 77);
   border: 5px;
   border-color: black;
   align-items: center;
@@ -202,18 +203,44 @@ body {
   height: calc(100vh - 101.5px);
   overflow: hidden;
 }
-
-#slide-1 {
+.char__bg #slide-1 {
+  font-size: 1em;
   display: grid;
-  background-color: blue;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "content1" "content2" "content3";
+}
+.char__bg #slide-1 .char__img {
+  grid-area: content1;
+  width: 300px;
+  display: flex;
+}
+.char__bg #slide-1 .char__content {
+  grid-area: content2;
+}
+.char__bg #slide-1 .char__pros {
+  grid-area: content3;
+  display: flex;
+  justify-content: center;
+}
+.char__bg #slide-1 .char__pros div {
+  padding: 10px;
 }
 
-.mario__content {
-  background-color: orange;
+@media (min-width: 768px) {
+  .char__bg #slide-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "content1 content2" "content3 content2";
+  }
+  .char__bg #slide-1 .char__img {
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
-
 .mario__container {
-  background-color: gray;
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -223,104 +250,116 @@ body {
   grid-template-areas: "content1 content1 content2" "content3 content4 content5";
 }
 
+.mario__bros {
+  display: grid;
+  justify-content: center;
+}
+
 .jugadores__bg {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .mkleo__container {
-  background-color: gray;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  grid-gap: 1rem;
-  height: calc(100vh - 101.5px);
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
   grid-template-areas: "content1 content2 content2" "content3 content4 content5";
 }
-
-#content1 {
+.mkleo__container #content1 {
   background-color: transparent;
   grid-area: content1;
   display: flex;
+  margin: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#content1 img {
+.mkleo__container #content1 img {
   width: 150px;
 }
 @media (min-width: 576px) {
-  #content1 img {
-    height: auto;
+  .mkleo__container #content1 img {
     width: auto;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+    overflow: hidden;
   }
 }
-
-#content2 {
-  background-color: blue;
+.mkleo__container #content2 {
   grid-area: content2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-#content3 {
+.mkleo__container #content3 {
   background-color: transparent;
   grid-area: content3;
   display: flex;
+  margin: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(193, 219, 44);
 }
-#content3 img {
+.mkleo__container #content3 img {
   width: 150px;
 }
 @media (min-width: 576px) {
-  #content3 img {
-    height: auto;
+  .mkleo__container #content3 img {
     width: auto;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+    overflow: hidden;
   }
 }
-
-#content4 {
+.mkleo__container #content4 {
   background-color: transparent;
   grid-area: content4;
   display: flex;
+  margin: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(192, 117, 4);
 }
-#content4 img {
+.mkleo__container #content4 img {
   width: 150px;
 }
 @media (min-width: 576px) {
-  #content4 img {
-    height: auto;
+  .mkleo__container #content4 img {
     width: auto;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+    overflow: hidden;
   }
 }
-
-#content5 {
+.mkleo__container #content5 {
   background-color: transparent;
   grid-area: content5;
   display: flex;
+  margin: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(238, 25, 174);
 }
-#content5 img {
+.mkleo__container #content5 img {
   width: 150px;
 }
 @media (min-width: 576px) {
-  #content5 img {
-    height: auto;
+  .mkleo__container #content5 img {
     width: auto;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+    overflow: hidden;
   }
 }
 
@@ -332,6 +371,9 @@ body {
   height: calc(100vh - 101.5px);
   flex-direction: column;
 }
+.contacto__bg h1 {
+  color: aqua;
+}
 .contacto__bg form {
   width: 400px;
   margin: 0 auto;
@@ -342,7 +384,7 @@ body {
 .contacto__bg label {
   display: block;
   margin-bottom: 10px;
-  color: silver;
+  color: aqua;
 }
 .contacto__bg input[type=text],
 .contacto__bg input[type=email],

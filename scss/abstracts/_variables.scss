@@ -1,3 +1,4 @@
+//despues borro las variables
 $colorPrimary: silver;
 $colorSecondary: aqua;
 $colorNavActive: lightblue;
@@ -7,3 +8,15 @@ $maxWidth: 1440px;
 $boxSm: 300px;
 $boxXl: 1200px;
 $viewHeight: calc(100vh - 101.5px);
+
+//mapa de colores
+$color: (
+  primary: silver,
+  secondary: aqua,
+  active: lightblue,
+  focus: blue,
+  bg: rgb(77, 77, 77),
+  box1: rgb(193, 219, 44),
+  box2: rgb(192, 117, 4),
+  box3: rgb(238, 25, 174),
+);

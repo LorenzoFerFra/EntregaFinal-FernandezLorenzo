@@ -1,5 +1,5 @@
-.mario__container{
-  background-color: gray;
+.mario__container {
+  
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -7,8 +7,10 @@
   grid-gap: 2rem;
   height: $viewHeight;
   grid-template-areas:
-  "content1 content1 content2"
-  "content3 content4 content5";
+    "content1 content1 content2"
+    "content3 content4 content5";
 }
-
-
+.mario__bros{
+  display: grid;
+  justify-content: center;
+}

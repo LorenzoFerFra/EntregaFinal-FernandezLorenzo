@@ -1,6 +1,11 @@
 * {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+body {
+  @include content__bg(none);
+  // max-width: $maxWidth;
+  // margin: 0 auto;          Me habias dicho de poner esto en el body y lo hice, pero la navbar y el footer se despegan de los bordes de la pantalla
 }
