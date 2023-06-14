@@ -158,28 +158,18 @@ p {
   height: calc(100vh - 61.5px);
 }
 
-.main__img {
-  width: 200px;
-}
-
-.video__title {
-  display: flex;
-  justify-content: center;
-}
-
 .main__video {
   display: flex;
 }
-
-.video-container {
+.main__video .video-container {
   flex: 1;
   background-color: transparent;
 }
-.video-container .video {
+.main__video .video-container .video {
   position: relative;
   padding-bottom: 50%;
 }
-.video-container iframe {
+.main__video .video-container iframe {
   position: absolute;
   padding: 5%;
   display: block;
@@ -240,19 +230,38 @@ p {
        object-fit: cover;
   }
 }
-.mario__container {
-  text-align: center;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  grid-gap: 2rem;
-  height: calc(100vh - 101.5px);
-  grid-template-areas: "content1 content1 content2" "content3 content4 content5";
+.juegos__bg {
+  min-width: 400px;
+  margin: 0 auto;
 }
-
-.mario__bros {
+.juegos__bg .mario__bros {
   display: grid;
   justify-content: center;
+  text-align: center;
+  grid-template-rows: 3% 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas: "content1" "content2" "content3" "content4";
+}
+.juegos__bg .mario__bros img {
+  width: 400px;
+}
+.juegos__bg .mario__bros .game__titulo {
+  grid-area: content1;
+}
+.juegos__bg .mario__bros .mario_world {
+  grid-area: content2;
+}
+.juegos__bg .mario__bros .mario_world .game__text {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  font-size: small;
+}
+.juegos__bg .mario__bros .mario__3 {
+  grid-area: content3;
+}
+.juegos__bg .mario__bros .mario__64 {
+  grid-area: content4;
 }
 
 .jugadores__bg {
