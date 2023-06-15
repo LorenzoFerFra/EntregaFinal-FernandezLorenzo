@@ -9,12 +9,13 @@
 }
 .navbar a {
   color: $colorSecondary;
+  font-family: "Oswald", sans-serif;
 }
 .navbar-nav .nav-link.active {
   color: lightblue;
 }
 .nav-link:hover {
-  color: $colorNavfocus;
+  color: map-get($color, focus);
 }
 .navbar-toggler:focus {
   box-shadow: none;

@@ -20,11 +20,13 @@
     }
     .mario_world {
       grid-area: content2;
+
       .game__text {
         background-color: map-get($color, dark);
         position: absolute;
-        top: 0;
+        top: 0%;
         font-size: small;
+        padding: 10px;
       }
     }
     .mario__3 {

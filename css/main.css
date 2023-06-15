@@ -36,6 +36,7 @@ p {
 
 .navbar a {
   color: aqua;
+  font-family: "Oswald", sans-serif;
 }
 
 .navbar-nav .nav-link.active {
@@ -254,8 +255,9 @@ p {
 .juegos__bg .mario__bros .mario_world .game__text {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 0;
+  top: 0%;
   font-size: small;
+  padding: 10px;
 }
 .juegos__bg .mario__bros .mario__3 {
   grid-area: content3;
