@@ -1,5 +1,8 @@
 
 .footer__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   background-color: map-get($color , bg);
   .footer__links, .footer__copy {
@@ -12,9 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    svg: {
-      padding: 10pxM
-    };
   }
   
 }

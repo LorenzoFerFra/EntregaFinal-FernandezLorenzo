@@ -2,9 +2,13 @@ h1,
 h2,
 h3 {
   font-family: "Oswald", sans-serif;
-  color: silver;
+  color: map-get($color, primary)
 }
-p,a {
+p{
   font-family: "Roboto", sans-serif;
-  color: silver;
+  color: map-get($color, primary)
+}
+a {
+  font-family: "Roboto", sans-serif;
+  color: map-get($color, secondary)
 }

@@ -1,5 +1,5 @@
 .navbar-expand-md {
-  background-color: $colorBg !important;
+  background-color: map-get($color, bg) !important;
 }
 .logo {
   width: 35px;
@@ -8,7 +8,7 @@
   padding: 0;
 }
 .navbar a {
-  color: $colorSecondary;
+  color: map-get($color, secondary);
   font-family: "Oswald", sans-serif;
 }
 .navbar-nav .nav-link.active {
@@ -22,5 +22,5 @@
 }
 .navbar-brand:focus,
 .navbar-brand:hover {
-  color: $colorSecondary;
+  color: map-get($color, secondary);
 }

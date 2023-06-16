@@ -1,27 +1,29 @@
 .juegos__bg {
+  min-height: 100%;
   min-width: 400px;
   max-width: $maxWidth;
-  height: $viewHeight;
+  height: 150vh;
   margin: 0 auto;
   h1{
-    font-size: 2vw;
-    padding-top: 1%;
-    padding-left: 10%;
+    color: map-get($color, secondary );
+    font-size: 40px;
   }
-
   .mario__bros{
     text-align: center;
+    align-items: center;
+    img{
+      width: 300px;
+    }
     .game__text {
       background-color: map-get($color, dark);
-      position: absolute;
-      width: 80%;
-      top: 50%;
-      left: 10%;
-      padding: 2vw;
     }
   }
   @media (min-width: 768px) {
-    
+    .juegos__bg {
+      h1{
+        font-size: 6vw;
+      }
+      }
   
 }
   }
