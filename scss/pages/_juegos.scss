@@ -1,39 +1,28 @@
 .juegos__bg {
   min-width: 400px;
+  max-width: $maxWidth;
+  height: $viewHeight;
   margin: 0 auto;
-  .mario__bros {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    grid-template-rows: 3% 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    grid-template-areas:
-      "content1"
-      "content2"
-      "content3"
-      "content4";
-    img {
-      width: 400px;
-    }
-    .game__titulo {
-      grid-area: content1;
-    }
-    .mario_world {
-      grid-area: content2;
+  h1{
+    font-size: 2vw;
+    padding-top: 1%;
+    padding-left: 10%;
+  }
 
-      .game__text {
-        background-color: map-get($color, dark);
-        position: absolute;
-        top: 0%;
-        font-size: small;
-        padding: 10px;
-      }
-    }
-    .mario__3 {
-      grid-area: content3;
-    }
-    .mario__64 {
-      grid-area: content4;
+  .mario__bros{
+    text-align: center;
+    .game__text {
+      background-color: map-get($color, dark);
+      position: absolute;
+      width: 80%;
+      top: 50%;
+      left: 10%;
+      padding: 2vw;
     }
   }
+  @media (min-width: 768px) {
+    
+  
 }
+  }
+

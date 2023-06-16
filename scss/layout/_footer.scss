@@ -1,5 +1,20 @@
+
 .footer__content {
-  display: flex;
-  justify-content: center;
-  background-color: $colorBg;
+  text-align: center;
+  background-color: map-get($color , bg);
+  .footer__links, .footer__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg: {
+      padding: 10pxM
+    };
+  }
+  
 }

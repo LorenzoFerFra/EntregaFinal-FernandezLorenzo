@@ -21,3 +21,11 @@ $color: (
   box3: rgb(238, 25, 174),
   dark: rgba(0, 0, 0, .5),
 );
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}

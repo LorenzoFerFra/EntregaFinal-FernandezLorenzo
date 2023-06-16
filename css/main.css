@@ -1,3 +1,11 @@
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +25,7 @@ h3 {
   color: silver;
 }
 
-p {
+p, a {
   font-family: "Roboto", sans-serif;
   color: silver;
 }
@@ -57,9 +65,20 @@ p {
 }
 
 .footer__content {
+  text-align: center;
+  background-color: rgb(77, 77, 77);
+}
+.footer__content .footer__links, .footer__content .footer__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__content .footer__media {
   display: flex;
   justify-content: center;
-  background-color: rgb(77, 77, 77);
+  align-items: center;
+  svg-padding: 10pxM;
 }
 
 .slider {
@@ -243,8 +262,13 @@ p {
 }
 .char__bg #slide-1 .char__img {
   grid-area: content1;
+  justify-self: center;
   width: 300px;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.char__bg #slide-1 .char__img img {
+  animation: mover 1s infinite alternate;
 }
 .char__bg #slide-1 .char__content {
   grid-area: content2;
@@ -257,14 +281,98 @@ p {
 .char__bg #slide-1 .char__pros div {
   padding: 10px;
 }
+.char__bg #slide-2 {
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "content1" "content2" "content3";
+}
+.char__bg #slide-2 .char__img {
+  grid-area: content1;
+  justify-self: center;
+  width: 300px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.char__bg #slide-2 .char__img img {
+  animation: mover 1s infinite alternate;
+}
+.char__bg #slide-2 .char__content {
+  grid-area: content2;
+}
+.char__bg #slide-2 .char__pros {
+  grid-area: content3;
+  display: flex;
+  justify-content: center;
+}
+.char__bg #slide-2 .char__pros div {
+  padding: 10px;
+}
+.char__bg #slide-3 {
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "content1" "content2" "content3";
+}
+.char__bg #slide-3 .char__img {
+  grid-area: content1;
+  justify-self: center;
+  width: 300px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.char__bg #slide-3 .char__img img {
+  animation: mover 1s infinite alternate;
+}
+.char__bg #slide-3 .char__content {
+  grid-area: content2;
+}
+.char__bg #slide-3 .char__pros {
+  grid-area: content3;
+  display: flex;
+  justify-content: center;
+}
+.char__bg #slide-3 .char__pros div {
+  padding: 10px;
+}
+.char__bg #slide-4 {
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "content1" "content2" "content3";
+}
+.char__bg #slide-4 .char__img {
+  grid-area: content1;
+  justify-self: center;
+  width: 300px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.char__bg #slide-4 .char__img img {
+  animation: mover 1s infinite alternate;
+}
+.char__bg #slide-4 .char__content {
+  grid-area: content2;
+}
+.char__bg #slide-4 .char__pros {
+  grid-area: content3;
+  display: flex;
+  justify-content: center;
+}
+.char__bg #slide-4 .char__pros div {
+  padding: 10px;
+}
 
 @media (min-width: 768px) {
-  .char__bg #slide-1 {
+  .char__bg #slide-1, .char__bg #slide-2, .char__bg #slide-3, .char__bg #slide-4 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "content1 content2" "content3 content2";
   }
-  .char__bg #slide-1 .char__img {
+  .char__bg #slide-1 .char__img, .char__bg #slide-2 .char__img, .char__bg #slide-3 .char__img, .char__bg #slide-4 .char__img {
     width: auto;
     height: auto;
     -o-object-fit: cover;
@@ -273,39 +381,26 @@ p {
 }
 .juegos__bg {
   min-width: 400px;
+  max-width: 1440px;
+  height: calc(100vh - 101.5px);
   margin: 0 auto;
 }
+.juegos__bg h1 {
+  font-size: 2vw;
+  padding-top: 1%;
+  padding-left: 10%;
+}
 .juegos__bg .mario__bros {
-  display: grid;
-  justify-content: center;
   text-align: center;
-  grid-template-rows: 3% 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  grid-template-areas: "content1" "content2" "content3" "content4";
 }
-.juegos__bg .mario__bros img {
-  width: 400px;
-}
-.juegos__bg .mario__bros .game__titulo {
-  grid-area: content1;
-}
-.juegos__bg .mario__bros .mario_world {
-  grid-area: content2;
-}
-.juegos__bg .mario__bros .mario_world .game__text {
+.juegos__bg .mario__bros .game__text {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 0%;
-  font-size: small;
-  padding: 10px;
+  width: 80%;
+  top: 50%;
+  left: 10%;
+  padding: 2vw;
 }
-.juegos__bg .mario__bros .mario__3 {
-  grid-area: content3;
-}
-.juegos__bg .mario__bros .mario__64 {
-  grid-area: content4;
-}
-
 .jugadores__bg {
   max-width: 1440px;
   margin: 0 auto;
