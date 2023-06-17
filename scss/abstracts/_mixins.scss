@@ -1,5 +1,6 @@
-@mixin img__content($area) {
-  background-color: transparent;
+// Contenedor de imagenes de mkleo
+@mixin img__container($area) {
+  border-radius: 25px;
   grid-area: $area;
   display: flex;
   margin: 20px;
@@ -9,15 +10,9 @@
   img {
     width: 150px;
   }
-  @media (min-width: 576px) {
-    img {
-      width: auto;
-      height: auto;
-      object-fit: cover;
-      overflow: hidden;
-    }
-  }
+  
 }
+//fondo de pantalla con patrones de lineas del sitio
 @mixin content__bg($none) {
   background: $none;
   background-image: repeating-linear-gradient(
@@ -36,7 +31,7 @@
     ),
     linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
 }
-
+//mixin para los slides de los personajes
 @mixin character__slide($num){
   font-size: 1em;
   display: grid;
@@ -46,6 +41,7 @@
     "content1"
     "content2"
     "content3";
+ // Caja de imagen del personaje
   .char__img {
     grid-area: content1;
     justify-self: center;
@@ -57,15 +53,26 @@
     animation: mover 1s infinite  alternate;
    }
   }
+  // Texto descriptivo del personaje
   .char__content {
     grid-area: content2;
+    background-color: map-get($color,dark);
   }
+  // Cajas de pros y contras del personaje
   .char__pros {
     grid-area: content3;
     display: flex;
     justify-content: center;
     div {
       padding: 10px;
+    }
+    .pros{
+      border-radius: 25px;
+      background-color: map-get($color,pros);
+    }
+    .cons{
+      border-radius: 25px;
+      background-color: map-get($color,cons);
     }
   }
   

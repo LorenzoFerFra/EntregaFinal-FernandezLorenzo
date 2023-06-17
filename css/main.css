@@ -20,7 +20,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Oswald", sans-serif;
   color: silver;
 }
@@ -50,6 +51,7 @@ a {
 .navbar a {
   color: aqua;
   font-family: "Oswald", sans-serif;
+  font-size: 1.5em;
 }
 
 .navbar-nav .nav-link.active {
@@ -70,7 +72,6 @@ a {
 }
 
 .footer__content {
-  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -186,13 +187,13 @@ a {
   text-align: center;
 }
 .main__content img {
-  width: 300px;
+  width: 200px;
 }
 .main__content h1 {
-  font-size: 3vh;
+  font-size: 4vh;
 }
 .main__content p {
-  font-size: 2vh;
+  font-size: 2.5vh;
 }
 .main__content .main__text {
   background-color: rgba(0, 0, 0, 0.5);
@@ -220,7 +221,7 @@ a {
 }
 
 .galeria img {
-  max-width: 80%;
+  max-width: 50%;
 }
 .galeria .row {
   text-align: center;
@@ -248,8 +249,15 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .main__video h2 {
+  .main__video h2,
+  .galeria h2 {
     font-size: 4vw;
+  }
+  .galeria h3 {
+    font-size: 2vw;
+  }
+  .galeria img {
+    max-width: 100%;
   }
 }
 .char__bg {
@@ -257,7 +265,7 @@ a {
   border-color: black;
   text-align: center;
   justify-content: center;
-  height: calc(100vh - 133.72px);
+  height: 110vh;
   overflow: hidden;
 }
 .char__bg #slide-1 {
@@ -279,6 +287,7 @@ a {
 }
 .char__bg #slide-1 .char__content {
   grid-area: content2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .char__bg #slide-1 .char__pros {
   grid-area: content3;
@@ -287,6 +296,14 @@ a {
 }
 .char__bg #slide-1 .char__pros div {
   padding: 10px;
+}
+.char__bg #slide-1 .char__pros .pros {
+  border-radius: 25px;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.char__bg #slide-1 .char__pros .cons {
+  border-radius: 25px;
+  background-color: rgba(255, 0, 0, 0.5);
 }
 .char__bg #slide-2 {
   font-size: 1em;
@@ -307,6 +324,7 @@ a {
 }
 .char__bg #slide-2 .char__content {
   grid-area: content2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .char__bg #slide-2 .char__pros {
   grid-area: content3;
@@ -315,6 +333,14 @@ a {
 }
 .char__bg #slide-2 .char__pros div {
   padding: 10px;
+}
+.char__bg #slide-2 .char__pros .pros {
+  border-radius: 25px;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.char__bg #slide-2 .char__pros .cons {
+  border-radius: 25px;
+  background-color: rgba(255, 0, 0, 0.5);
 }
 .char__bg #slide-3 {
   font-size: 1em;
@@ -335,6 +361,7 @@ a {
 }
 .char__bg #slide-3 .char__content {
   grid-area: content2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .char__bg #slide-3 .char__pros {
   grid-area: content3;
@@ -343,6 +370,14 @@ a {
 }
 .char__bg #slide-3 .char__pros div {
   padding: 10px;
+}
+.char__bg #slide-3 .char__pros .pros {
+  border-radius: 25px;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.char__bg #slide-3 .char__pros .cons {
+  border-radius: 25px;
+  background-color: rgba(255, 0, 0, 0.5);
 }
 .char__bg #slide-4 {
   font-size: 1em;
@@ -363,6 +398,7 @@ a {
 }
 .char__bg #slide-4 .char__content {
   grid-area: content2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .char__bg #slide-4 .char__pros {
   grid-area: content3;
@@ -372,8 +408,19 @@ a {
 .char__bg #slide-4 .char__pros div {
   padding: 10px;
 }
+.char__bg #slide-4 .char__pros .pros {
+  border-radius: 25px;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.char__bg #slide-4 .char__pros .cons {
+  border-radius: 25px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
 
 @media (min-width: 768px) {
+  .char__bg {
+    height: 95vh;
+  }
   .char__bg #slide-1, .char__bg #slide-2, .char__bg #slide-3, .char__bg #slide-4 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -384,6 +431,18 @@ a {
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 25px;
+  }
+  .char__bg #slide-1 .char__text, .char__bg #slide-2 .char__text, .char__bg #slide-3 .char__text, .char__bg #slide-4 .char__text {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .char__bg #slide-1 .char__pros .pros, .char__bg #slide-2 .char__pros .pros, .char__bg #slide-3 .char__pros .pros, .char__bg #slide-4 .char__pros .pros {
+    border-radius: 25px;
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+  .char__bg #slide-1 .char__pros .cons, .char__bg #slide-2 .char__pros .cons, .char__bg #slide-3 .char__pros .cons, .char__bg #slide-4 .char__pros .cons {
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.5);
   }
 }
 .juegos__bg {
@@ -402,10 +461,16 @@ a {
   align-items: center;
 }
 .juegos__bg .mario__bros img {
-  width: 300px;
+  width: 150px;
 }
 .juegos__bg .mario__bros .game__text {
   background-color: rgba(0, 0, 0, 0.5);
+}
+.juegos__bg .mario__bros .game__text__li {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.juegos__bg .mario__bros .game__text__li p {
+  color: aqua;
 }
 @media (min-width: 768px) {
   .juegos__bg .juegos__bg h1 {
@@ -416,18 +481,17 @@ a {
 .jugadores__bg {
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.mkleo__container {
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 100vh;
-  grid-template-areas: "content1 content2 content2" "content3 content4 content5";
 }
-.mkleo__container #content1 {
-  background-color: transparent;
+.jugadores__bg .mkleo__container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  height: 150vh;
+  grid-template-areas: "content1" "content2" "content3" "content4" "content5";
+}
+.jugadores__bg .mkleo__container #content1 {
+  border-radius: 25px;
   grid-area: content1;
   display: flex;
   margin: 20px;
@@ -435,86 +499,96 @@ a {
   align-items: center;
   flex-direction: column;
 }
-.mkleo__container #content1 img {
+.jugadores__bg .mkleo__container #content1 img {
   width: 150px;
 }
-@media (min-width: 576px) {
-  .mkleo__container #content1 img {
-    width: auto;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    overflow: hidden;
-  }
+.jugadores__bg .mkleo__container .mkleo__text {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
 }
-.mkleo__container #content2 {
+.jugadores__bg .mkleo__container #content2 {
   grid-area: content2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.mkleo__container #content3 {
-  background-color: transparent;
+.jugadores__bg .mkleo__container #content3 {
+  border-radius: 25px;
   grid-area: content3;
   display: flex;
   margin: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(193, 219, 44);
+  background-color: rgba(193, 219, 44, 0.3);
 }
-.mkleo__container #content3 img {
+.jugadores__bg .mkleo__container #content3 img {
   width: 150px;
 }
-@media (min-width: 576px) {
-  .mkleo__container #content3 img {
-    width: auto;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    overflow: hidden;
-  }
-}
-.mkleo__container #content4 {
-  background-color: transparent;
+.jugadores__bg .mkleo__container #content4 {
+  border-radius: 25px;
   grid-area: content4;
   display: flex;
   margin: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(192, 117, 4);
+  background-color: rgba(192, 117, 4, 0.3);
 }
-.mkleo__container #content4 img {
+.jugadores__bg .mkleo__container #content4 img {
   width: 150px;
 }
-@media (min-width: 576px) {
-  .mkleo__container #content4 img {
-    width: auto;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-    overflow: hidden;
-  }
-}
-.mkleo__container #content5 {
-  background-color: transparent;
+.jugadores__bg .mkleo__container #content5 {
+  border-radius: 25px;
   grid-area: content5;
   display: flex;
   margin: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(238, 25, 174);
+  background-color: rgba(238, 25, 174, 0.3);
 }
-.mkleo__container #content5 img {
+.jugadores__bg .mkleo__container #content5 img {
   width: 150px;
 }
+.jugadores__bg .hbox__container {
+  margin-top: 10vh;
+}
+.jugadores__bg .hbox__container img {
+  width: 150px;
+}
+.jugadores__bg .hbox__container .hbox__text {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  font-size: 1em;
+}
 @media (min-width: 576px) {
-  .mkleo__container #content5 img {
+  .jugadores__bg .mkleo__container #content1 img, .jugadores__bg .mkleo__container #content3 img, .jugadores__bg .mkleo__container #content4 img, .jugadores__bg .mkleo__container #content5 img {
+    width: 250px;
+  }
+  .jugadores__bg .hbox__container img {
+    width: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .jugadores__bg .mkleo__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    grid-template-areas: "content1 content2 content2" "content3 content4 content5";
+  }
+  .jugadores__bg .mkleo__container #content1 img, .jugadores__bg .mkleo__container #content2 img, .jugadores__bg .mkleo__container #content3 img, .jugadores__bg .mkleo__container #content4 img, .jugadores__bg .mkleo__container #content5 img {
     width: auto;
     height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+  }
+  .jugadores__bg .hbox__container img {
+    width: auto;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     overflow: hidden;
@@ -526,7 +600,7 @@ a {
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
-  height: calc(100vh - 133.72px);
+  height: 100vh;
   flex-direction: column;
 }
 .contacto__bg h1 {

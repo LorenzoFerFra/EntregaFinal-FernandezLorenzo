@@ -3,7 +3,7 @@
   justify-content: center;
   max-width: $maxWidth;
   margin: 0 auto;
-  height: $viewHeight;
+  height: 100vh;
   flex-direction: column;
   h1 {
     color: map-get($color, secondary);

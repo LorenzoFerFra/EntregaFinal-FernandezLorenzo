@@ -18,10 +18,14 @@ $color: (
   active: lightblue,
   focus: blue,
   bg: rgb(77, 77, 77),
-  box1: rgb(193, 219, 44),
-  box2: rgb(192, 117, 4),
-  box3: rgb(238, 25, 174),
+  box1: rgb(193, 219, 44, .3),
+  box2: rgb(192, 117, 4, .3),
+  box3: rgb(238, 25, 174, .3),
+  pros: rgba(0, 255, 0, .5),
+  cons: rgba(255, 0, 0, .5),
   dark: rgba(0, 0, 0, .5),
+  light: rgba(255, 255, 255, .5),
+
 );
 @-webkit-keyframes mover {
   0% { transform: translateY(0); }

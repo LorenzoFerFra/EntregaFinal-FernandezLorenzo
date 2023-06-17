@@ -3,7 +3,7 @@
   border-color: black;
   text-align: center;
   justify-content: center;
-  height: $viewHeight;
+  height: 110vh;
   overflow: hidden;
 
   #slide-1 {
@@ -22,6 +22,7 @@
 }
 @media (min-width: 768px) {
   .char__bg {
+    height: 95vh;
     #slide-1,#slide-2,#slide-3,#slide-4 {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -32,10 +33,22 @@
         width: auto;
         height: auto;
         object-fit: cover;
+        border-radius: 25px;
+      }
+
+      .char__text{
+        background-color: map-get($color, dark);
+      }
+      .char__pros{
+        .pros{
+          border-radius: 25px;
+          background-color: map-get($color,pros);
+        }
+        .cons{
+          border-radius: 25px;
+          background-color: map-get($color,cons);
+        }
       }
     }
-    
-    
-    
   }
 }
