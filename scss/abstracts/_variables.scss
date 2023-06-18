@@ -7,8 +7,7 @@
 $maxWidth: 1440px;
 $boxSm: 300px;
 $boxXl: 1200px;
-$viewHeight: calc(100vh - 133.72px);
-$viewHeight2: 100vh;
+
 
 
 //mapa de colores
@@ -25,8 +24,21 @@ $color: (
   cons: rgba(255, 0, 0, .5),
   dark: rgba(0, 0, 0, .5),
   light: rgba(255, 255, 255, .5),
-
+  mario: rgba(201, 55, 55, 0.35),
+  pikachu: rgba(255, 255, 0, 0.26),
+  dk: rgba(102, 51, 0, 0.45),
+  kirby: rgba(240, 72, 203, 0.26),
 );
+// Colores de personajes
+$chara: (
+  mario: rgba(201, 55, 55, 0.26),
+  pikachu: rgba(255, 255, 0, 0.26),
+  dk: rgba(102, 51, 0, 0.452),
+  kirby: rgba(240, 72, 203, 0.438),
+);
+
+
+
 @-webkit-keyframes mover {
   0% { transform: translateY(0); }
   100% { transform: translateY(10px); }

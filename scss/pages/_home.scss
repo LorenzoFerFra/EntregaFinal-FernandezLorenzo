@@ -1,5 +1,5 @@
 .main__content {
-  height: calc(100vh - 61.5px);
+  height: auto;
   text-align: center;
   img {
     width: 200px;
@@ -12,6 +12,7 @@
   }
   .main__text {
     background-color: map-get($color, dark);
+    border-radius: 25px ;
   }
 }
 .main__video {

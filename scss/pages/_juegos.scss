@@ -1,18 +1,29 @@
 .juegos__bg {
-  min-height: 100%;
-  min-width: 400px;
   max-width: $maxWidth;
-  height: 150vh;
   margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+
   h1{
-    color: map-get($color, secondary );
-    font-size: 40px;
+    padding:  3% 0% 0 3%;
+    color: map-get($color, secondary);
+    font-size: 4vw;
   }
-  .mario__bros{
+  h2{
+    font-size: 3vw;
+  }
+  p{
+    font-size: 2vw;
+  }
+  img{
+    width: 150px;
+  }
+  .mario__container, .pokemon__container, .dk__container, .kirby__container{
     text-align: center;
     align-items: center;
-    img{
-      width: 150px;
+    border-radius: 25px;
+    div{
+      margin: 3% 3% 3% 3%;
     }
     .game__text {
       background-color: map-get($color, dark);
@@ -24,12 +35,36 @@
       }
     }
   }
-  @media (min-width: 768px) {
-    .juegos__bg {
-      h1{
-        font-size: 6vw;
-      }
-      }
+  .mario__container{
+    background-color: map-get($color, mario);
   }
+  .pokemon__container{
+    background-color: map-get($color, pikachu);
   }
+  .dk__container{
+    background-color: map-get($color, dk);
+  }
+  .kirby__container{
+    background-color: map-get($color, kirby);
+  }
+}
+@media (min-width: 576px) {
+  .juegos__bg {
+
+    h1,h2{
+      font-size: 4vw;
+    }
+    h3{
+      font-size: 3vw;
+    }
+    p{
+      font-size: 2vw;
+    }
+    img{
+     width: 100%;
+    }
+  }
+}
+
+
 

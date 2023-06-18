@@ -183,7 +183,7 @@ a {
   }
 }
 .main__content {
-  height: calc(100vh - 61.5px);
+  height: auto;
   text-align: center;
 }
 .main__content img {
@@ -197,6 +197,7 @@ a {
 }
 .main__content .main__text {
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
 }
 
 .main__video {
@@ -261,157 +262,80 @@ a {
   }
 }
 .char__bg {
-  border: 5px;
-  border-color: black;
-  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
   justify-content: center;
-  height: 110vh;
   overflow: hidden;
 }
-.char__bg #slide-1 {
-  font-size: 1em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "content1" "content2" "content3";
-}
 .char__bg #slide-1 .char__img {
-  grid-area: content1;
-  justify-self: center;
-  width: 300px;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.char__bg #slide-1 .char__img img {
-  animation: mover 1s infinite alternate;
-}
-.char__bg #slide-1 .char__content {
-  grid-area: content2;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.char__bg #slide-1 .char__pros {
-  grid-area: content3;
-  display: flex;
-  justify-content: center;
-}
-.char__bg #slide-1 .char__pros div {
-  padding: 10px;
-}
-.char__bg #slide-1 .char__pros .pros {
-  border-radius: 25px;
-  background-color: rgba(0, 255, 0, 0.5);
-}
-.char__bg #slide-1 .char__pros .cons {
-  border-radius: 25px;
-  background-color: rgba(255, 0, 0, 0.5);
-}
-.char__bg #slide-2 {
-  font-size: 1em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "content1" "content2" "content3";
+  background-color: rgba(201, 55, 55, 0.35);
 }
 .char__bg #slide-2 .char__img {
-  grid-area: content1;
-  justify-self: center;
-  width: 300px;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.char__bg #slide-2 .char__img img {
-  animation: mover 1s infinite alternate;
-}
-.char__bg #slide-2 .char__content {
-  grid-area: content2;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.char__bg #slide-2 .char__pros {
-  grid-area: content3;
-  display: flex;
-  justify-content: center;
-}
-.char__bg #slide-2 .char__pros div {
-  padding: 10px;
-}
-.char__bg #slide-2 .char__pros .pros {
-  border-radius: 25px;
-  background-color: rgba(0, 255, 0, 0.5);
-}
-.char__bg #slide-2 .char__pros .cons {
-  border-radius: 25px;
-  background-color: rgba(255, 0, 0, 0.5);
-}
-.char__bg #slide-3 {
-  font-size: 1em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "content1" "content2" "content3";
+  background-color: rgba(255, 255, 0, 0.26);
 }
 .char__bg #slide-3 .char__img {
-  grid-area: content1;
-  justify-self: center;
-  width: 300px;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(102, 51, 0, 0.45);
 }
-.char__bg #slide-3 .char__img img {
-  animation: mover 1s infinite alternate;
+.char__bg #slide-4 .char__img {
+  background-color: rgba(240, 72, 203, 0.26);
 }
-.char__bg #slide-3 .char__content {
-  grid-area: content2;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.char__bg #slide-3 .char__pros {
-  grid-area: content3;
-  display: flex;
-  justify-content: center;
-}
-.char__bg #slide-3 .char__pros div {
-  padding: 10px;
-}
-.char__bg #slide-3 .char__pros .pros {
-  border-radius: 25px;
-  background-color: rgba(0, 255, 0, 0.5);
-}
-.char__bg #slide-3 .char__pros .cons {
-  border-radius: 25px;
-  background-color: rgba(255, 0, 0, 0.5);
-}
+.char__bg #slide-1,
+.char__bg #slide-2,
+.char__bg #slide-3,
 .char__bg #slide-4 {
   font-size: 1em;
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "content1" "content2" "content3";
 }
+.char__bg #slide-1 .char__img,
+.char__bg #slide-2 .char__img,
+.char__bg #slide-3 .char__img,
 .char__bg #slide-4 .char__img {
   grid-area: content1;
   justify-self: center;
   width: 300px;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.5);
 }
+.char__bg #slide-1 .char__img img,
+.char__bg #slide-2 .char__img img,
+.char__bg #slide-3 .char__img img,
 .char__bg #slide-4 .char__img img {
   animation: mover 1s infinite alternate;
 }
+.char__bg #slide-1 .char__content,
+.char__bg #slide-2 .char__content,
+.char__bg #slide-3 .char__content,
 .char__bg #slide-4 .char__content {
   grid-area: content2;
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
 }
+.char__bg #slide-1 .char__pros,
+.char__bg #slide-2 .char__pros,
+.char__bg #slide-3 .char__pros,
 .char__bg #slide-4 .char__pros {
   grid-area: content3;
   display: flex;
   justify-content: center;
 }
+.char__bg #slide-1 .char__pros div,
+.char__bg #slide-2 .char__pros div,
+.char__bg #slide-3 .char__pros div,
 .char__bg #slide-4 .char__pros div {
   padding: 10px;
 }
+.char__bg #slide-1 .char__pros .pros,
+.char__bg #slide-2 .char__pros .pros,
+.char__bg #slide-3 .char__pros .pros,
 .char__bg #slide-4 .char__pros .pros {
   border-radius: 25px;
   background-color: rgba(0, 255, 0, 0.5);
 }
+.char__bg #slide-1 .char__pros .cons,
+.char__bg #slide-2 .char__pros .cons,
+.char__bg #slide-3 .char__pros .cons,
 .char__bg #slide-4 .char__pros .cons {
   border-radius: 25px;
   background-color: rgba(255, 0, 0, 0.5);
@@ -419,65 +343,114 @@ a {
 
 @media (min-width: 768px) {
   .char__bg {
+    font-size: 1.5em;
+  }
+  .char__bg .slider {
     height: 95vh;
   }
-  .char__bg #slide-1, .char__bg #slide-2, .char__bg #slide-3, .char__bg #slide-4 {
+  .char__bg #slide-1,
+  .char__bg #slide-2,
+  .char__bg #slide-3,
+  .char__bg #slide-4 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "content1 content2" "content3 content2";
+    grid-template-areas: "content1 content2" "content3 content3";
   }
-  .char__bg #slide-1 .char__img, .char__bg #slide-2 .char__img, .char__bg #slide-3 .char__img, .char__bg #slide-4 .char__img {
+  .char__bg #slide-1 .char__img,
+  .char__bg #slide-2 .char__img,
+  .char__bg #slide-3 .char__img,
+  .char__bg #slide-4 .char__img {
     width: auto;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 25px;
   }
-  .char__bg #slide-1 .char__text, .char__bg #slide-2 .char__text, .char__bg #slide-3 .char__text, .char__bg #slide-4 .char__text {
+  .char__bg #slide-1 .char__text,
+  .char__bg #slide-2 .char__text,
+  .char__bg #slide-3 .char__text,
+  .char__bg #slide-4 .char__text {
     background-color: rgba(0, 0, 0, 0.5);
   }
-  .char__bg #slide-1 .char__pros .pros, .char__bg #slide-2 .char__pros .pros, .char__bg #slide-3 .char__pros .pros, .char__bg #slide-4 .char__pros .pros {
+  .char__bg #slide-1 .char__pros .pros,
+  .char__bg #slide-2 .char__pros .pros,
+  .char__bg #slide-3 .char__pros .pros,
+  .char__bg #slide-4 .char__pros .pros {
     border-radius: 25px;
     background-color: rgba(0, 255, 0, 0.5);
   }
-  .char__bg #slide-1 .char__pros .cons, .char__bg #slide-2 .char__pros .cons, .char__bg #slide-3 .char__pros .cons, .char__bg #slide-4 .char__pros .cons {
+  .char__bg #slide-1 .char__pros .cons,
+  .char__bg #slide-2 .char__pros .cons,
+  .char__bg #slide-3 .char__pros .cons,
+  .char__bg #slide-4 .char__pros .cons {
     border-radius: 25px;
     background-color: rgba(255, 0, 0, 0.5);
   }
 }
 .juegos__bg {
-  min-height: 100%;
-  min-width: 400px;
   max-width: 1440px;
-  height: 150vh;
   margin: 0 auto;
+  height: auto;
+  overflow: hidden;
 }
 .juegos__bg h1 {
+  padding: 3% 0% 0 3%;
   color: aqua;
-  font-size: 40px;
+  font-size: 4vw;
 }
-.juegos__bg .mario__bros {
-  text-align: center;
-  align-items: center;
+.juegos__bg h2 {
+  font-size: 3vw;
 }
-.juegos__bg .mario__bros img {
+.juegos__bg p {
+  font-size: 2vw;
+}
+.juegos__bg img {
   width: 150px;
 }
-.juegos__bg .mario__bros .game__text {
+.juegos__bg .mario__container, .juegos__bg .pokemon__container, .juegos__bg .dk__container, .juegos__bg .kirby__container {
+  text-align: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.juegos__bg .mario__container div, .juegos__bg .pokemon__container div, .juegos__bg .dk__container div, .juegos__bg .kirby__container div {
+  margin: 3% 3% 3% 3%;
+}
+.juegos__bg .mario__container .game__text, .juegos__bg .pokemon__container .game__text, .juegos__bg .dk__container .game__text, .juegos__bg .kirby__container .game__text {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.juegos__bg .mario__bros .game__text__li {
+.juegos__bg .mario__container .game__text__li, .juegos__bg .pokemon__container .game__text__li, .juegos__bg .dk__container .game__text__li, .juegos__bg .kirby__container .game__text__li {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.juegos__bg .mario__bros .game__text__li p {
+.juegos__bg .mario__container .game__text__li p, .juegos__bg .pokemon__container .game__text__li p, .juegos__bg .dk__container .game__text__li p, .juegos__bg .kirby__container .game__text__li p {
   color: aqua;
 }
-@media (min-width: 768px) {
-  .juegos__bg .juegos__bg h1 {
-    font-size: 6vw;
-  }
+.juegos__bg .mario__container {
+  background-color: rgba(201, 55, 55, 0.35);
+}
+.juegos__bg .pokemon__container {
+  background-color: rgba(255, 255, 0, 0.26);
+}
+.juegos__bg .dk__container {
+  background-color: rgba(102, 51, 0, 0.45);
+}
+.juegos__bg .kirby__container {
+  background-color: rgba(240, 72, 203, 0.26);
 }
 
+@media (min-width: 576px) {
+  .juegos__bg h1, .juegos__bg h2 {
+    font-size: 4vw;
+  }
+  .juegos__bg h3 {
+    font-size: 3vw;
+  }
+  .juegos__bg p {
+    font-size: 2vw;
+  }
+  .juegos__bg img {
+    width: 100%;
+  }
+}
 .jugadores__bg {
   max-width: 1440px;
   margin: 0 auto;
